@@ -1,0 +1,60 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .menu li {
+        float: left;
+    }
+
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            .menu li a:hover {
+                background-color: #111;
+            }
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+    .submenu a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .submenu a:hover {
+            background-color: #111;
+        }
+
+.menu li:hover .submenu {
+    display: block;
+}

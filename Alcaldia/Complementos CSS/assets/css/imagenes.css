@@ -1,0 +1,19 @@
+﻿
+.imagen-logo {
+    width: 190px;
+    height: 41px;
+    background-image: url('../img/logo.png');
+}
+.contenedor {
+    width: 200px; /* Ancho deseado del contenedor */
+    height: auto; /* Altura automática para mantener la proporción de aspecto */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+    .contenedor img {
+        max-width: 100%; /* La imagen se adaptará al tamaño del contenedor */
+        height: auto; /* Altura automática para mantener la proporción de aspecto */
+        align-self: center;
+    }

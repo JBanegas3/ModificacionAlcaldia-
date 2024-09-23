@@ -1,0 +1,39 @@
+# Visual Studio files
+*.vs/
+*.vsix
+*.vsidx
+*.sln
+*.csproj.user
+*.user
+
+# ASP.NET files
+bin/
+obj/
+Debug/
+Release/
+App_Data/
+Content/
+Scripts/
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# User files
+*.suo
+*.userprefs
+
+# Other files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ASP.NET Core files
+*.runtimeconfig
+*.runtimeconfig.dev.json
+*.runtimeconfig.json

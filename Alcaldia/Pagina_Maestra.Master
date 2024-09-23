@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pagina_Maestra.master.cs" Inherits="Alcaldia.Pagina_Maestra" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="es" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="Complementos CSS/app.min.css" rel="stylesheet" />
+    <link href="Complementos CSS/Menu.css" rel="stylesheet" />
+    <link href="Complementos CSS/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="Complementos CSS/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="pace-top">
+    <div class="menu">
+        <ul>
+            <li><a href="Principal.aspx">INICIO</a>
+                <ul class="submenu">
+                    <li><a id="auditoria" href="Auditoria.aspx">Auditoria</a></li>
+                    <li><a id="mant_usuarios" href="Usuarios.aspx">Mantenimiento Usuarios</a></li>
+                    <li><a id="Declaraciones" href="Declaraciones.aspx">Declaraciones</a></li>
+                    <li><a id="DeclaracionesTotales" href="DeclaracionesTotales.aspx">Declaraciones Totales</a></li>
+                    <li><a href="Login">Salir</a></li>
+                </ul>
+            </li>
+            <li><a id="banner"></a></li>
+        </ul>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="Complementos CSS/js/app.min.js"></script>
+    <script src="Complementos CSS/js/theme/default.min.js"></script>
+    <script src="Complementos CSS/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="Complementos CSS/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="Complementos CSS/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="Complementos CSS/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <script src="Complementos CSS/js/demo/table-manage-default.demo.js"></script>
+    <script src="Scripts/Principal.js?v=@DateTime.Now.Ticks"></script>
+</body>
+</html>
